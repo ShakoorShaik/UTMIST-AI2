@@ -12,7 +12,7 @@ pygame.init()
 my_agent = UserInputAgent()
 my_agent2 = UserInputAgent()
 
-#Input your file path here in SubmittedAgent if you are loading a model:
+#NOTE: Input your file path here in SubmittedAgent if you are loading a model:
 opponent = SubmittedAgent()
 
 match_time = 99999
@@ -23,4 +23,5 @@ run_real_time_match(
     agent_2=my_agent2,
     max_timesteps=30 * match_time,  # Match time in frames (adjust as needed)
     resolution=CameraResolution.LOW,
+    video_path='tt_agent.mp4' #NOTE: you can change the save path of the video here
 )
