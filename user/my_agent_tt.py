@@ -124,7 +124,7 @@ def check_pcc(tensor1: torch.Tensor, tensor2: torch.Tensor, threshold: float = 0
 def test_mlp_policy():
     
     # Open the device (since we are only using single devices N150 cards, your mesh shape will be 1x1)
-    mesh_device = ttnn.open_mesh_device(ttnn.MeshShape(1,1))
+    mesh_device = ttnn.open_mesh(ttnn.MeshShape(1, 1))
     
     # Dimensions based on our custom RL environment
     batch_size = 1
